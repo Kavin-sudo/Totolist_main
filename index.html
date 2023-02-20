@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+</head>
+<body>
+<!-- hedd -->
+    <div class='header'>
+        <div class='header_left-side'>
+            <ul class='header_left-side_flex'> 
+            <li class='li'><i class="fa-solid fa-bars"></i></li>
+            <li class='li'><i class="fa-solid fa-grid-2"></i>Dashbord</li>
+            <li class='li'><i class="fa-solid fa-folder"></i>Colections</li>      
+            </ul>
+        
+        </div>
+        <div class='header_right-side'>
+            <ul class='header_right-side_flex'>
+                <li class='li'><i class="fa-solid fa-plus"></i></li>
+                <li class='li'><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li class='li'><i class="fa-solid fa-bell"></i></li>
+                <li class='li'><i class="fa-sharp fa-solid fa-atom"></i></li>
+            </ul>
+        </div>
+    </div>
+ <!-- side menu -->
+ <div class='main_page'>
+ <nav class="sidemenu">
+    <ul class="sidemenu_cont">
+        <li class="sidemenu_cont_tital">
+            <h3>Collections</h3>
+        </li>
+        <li class="sidemenu_cont_person">
+            <img class='sidemenu_cont_person_img' src='https://kschool.ml/stage_erp/dashboard/assets/side_menu/all_students.png' alt='side-img' />
+            <span class="lbl">All students</span>
+        </li>
+        <li class="sidemenu_cont_person">
+            <img class='sidemenu_cont_person_img' src='https://kschool.ml/stage_erp/dashboard/assets/side_menu/onboard.png' alt='side-img' />
+            <span class="lbl">Onboarded Student</span>
+        </li>
+        <li class="sidemenu_cont_person">
+            <img class='sidemenu_cont_person_img' src='https://kschool.ml/stage_erp/dashboard/assets/side_menu/action_reqiure.png' alt='side-img' />
+            <span class="lbl">Action Required</span>
+        </li>
+
+    </ul>
+    </nav>
+
+<div class='main'>
+    <div class="task_container">
+        <div class='task_container_top'>
+            <div class='task_container_top_left'>
+                <div class='roend'><i class="fa-solid fa-chevron-left"></i></div>
+                <h3>School Task Total <span id="total"></span></h3>
+            </div>
+            <div class='task_container_top_right'>
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+        </div>
+        <div class="create-task" >
+            <button class="add_btn"><i class="fa-solid fa-plus" id="button"></i></button>
+          	<input id="new-task" type="text">
+         </div>
+         <!-- <div class='task_container_count'><p>Task - B</p></div> -->
+         <h3>Task -<span id="incompled"> 0</span></h3>
+
+        <ul class="task_container_wigte" id="incomplete-tasks">
+			<!-- <li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+			<li><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li> -->
+        </ul>
+
+
+		<h3>Completed <span id="completed">0</span></h3>
+		<ul class="task_container_wigte" id="completed-tasks">
+			<!-- <li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li> -->
+		</ul>
+    </div>
+
+    <!-- <div class="container">
+		<h2>TODO LIST</h2>
+		<h3>Add Item</h3>
+		<p>
+			<input id="new-task" type="text"><button>Add</button>
+		</p>
+
+		<h3>Todo</h3>
+		<ul id="incomplete-tasks">
+			<li><input type="checkbox"><label>Pay Bills</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+			<li><input type="checkbox"><label>Go Shopping</label><input type="text" value="Go Shopping"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+		</ul>
+
+		<h3>Completed</h3>
+		<ul id="completed-tasks">
+			<li><input type="checkbox" checked><label>See the Doctor</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+		</ul>
+	</div> -->
+
+</div>
+
+</div>
+
+    
+
+<script src="css/index.js"></script>
+<!-- <script src="css/heder.js"></script> -->
+</body>
+</html>
