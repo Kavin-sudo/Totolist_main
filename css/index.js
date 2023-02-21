@@ -90,7 +90,7 @@ let editTask = function() {
 
 //Delete an existing task
 let deleteTask = function() {
-	console.log("Delete task...");
+	alert('Delete task...')
 	let listItem = this.parentNode;
 	let ul = listItem.parentNode;
     console.log(ul)
