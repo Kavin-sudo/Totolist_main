@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoList</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
 </head>
@@ -17,6 +20,7 @@
             <li class='li'><i class="fa-solid fa-grid-2"></i>Dashbord</li>
             <li class='li'><i class="fa-solid fa-folder"></i>Colections</li>      
             </ul>
+        
         </div>
         <div class='header_right-side'>
             <ul class='header_right-side_flex'>
@@ -61,23 +65,62 @@
                 <i class="fa-solid fa-ellipsis"></i>
             </div>
         </div>
-        <div class="create-task" >
-            <button class="add_btn"><i class="fa-solid fa-plus" id="button"></i></button>
-          	<input id="new-task" type="text">
-         </div>
-       
-         <h3>Task -<span id="incompled"> 0</span></h3>
+        <section class="container--center">
+            
+            <div class="task__column">
+                <div class="task-container">
+                    <div class="task__bar add-task">
+                        <div class="task-action">
+                            <button class="task__btn">+</button>
+                        </div>
+                        <div class="task__input-box">
+                            <input type="text" class="task__input" id="task-input" placeholder="Add a task">
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="task__area">
+                    <div class="task-container task-container--incomplete">
+                        <p class="task-total">Tasks - <span class="task__count--incomplete">0</span></p>
+                        <ul class="task__list task__list--incomplete">
+                            <li class="task__item task__item--incomplete">
+                                <div class="task__bar">
+                                    <div class="task-action">
+                                        <input type="checkbox" class="checkbox__input" id="check-incomplete">
+                                        <label for="check-incomplete" class="checkbox__label"></label>
+                                    </div>
+                                    <div class="task__content">
+                                        <p class="task__heading"></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="task-container task-container--completed">
+                        <p class="task-total">Completed - <span class="task__count--completed">0</span></p>
+                        <ul class="task__list task__list--completed">
+                            <li class="task__item">
+                                <div class="task__bar">
+                                    <div class="task-action">
+                                        <input type="checkbox" class="checkbox__input" id="check-completed" checked>
+                                        <label for="check-completed" class="checkbox__label"></label>
+                                    </div>
+                                    <div class="task__content">
+                                        <p class="task__heading"></p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+     
+        </section>
 
-        <ul class="task_container_wigte" id="incomplete-tasks">
-			
-        </ul>
-
-
-		<h3>Completed <span id="completed">0</span></h3>
-		<ul class="task_container_wigte" id="completed-tasks">
-
-		</ul>
     </div>
+
 
 </div>
 
@@ -86,5 +129,6 @@
     
 
 <script src="css/index.js"></script>
+<!-- <script src="css/heder.js"></script> -->
 </body>
 </html>
